@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TFC Haruna</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Grotesk:wght@300..700&display=swap"
+            rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <!-- Aquí va el titulo o el logo-->
+        <div class="logo">
+            <img
+                style=" width: 300px; height: auto; display:flex; margin-left: auto; margin-right: auto; margin-bottom: -100px;"
+                src="logo.png">
+        </div>
+
+        <!-- Aqui va el video-->
+        <div class="container-video">
+            <video autoplay loop muted playsinline class="video-fondo"
+                src="video-fondo.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Aquí va el menu de navegación-->
+        <div class="home">
+
+            <nav class="menu">
+                <a class="menu-item" href="productos.html">Productos</a>
+                <a class="menu-item" href="#info">Acerca de Mí</a>
+                <a class="menu-item" href="#contacto">Contacto</a>
+            </nav>
+        </div>
+
+        <div class="wrapper">
+
+            <div id="info">
+                <img src="sobremi-haru.jpeg" class="profile-img">
+                <img src="sobremi-foto1.jpg" class="profile-img">
+                <img src="sobremi-foto2.jpg" class="profile-img">
+                <img src="sobremi-foto4.jpg" class="profile-img">
+                <img src="sobremi-foto-hachi.jpg" class="profile-img">
+            </div>
+            <div class="intro">
+                <h2>Acerca de mí</h2>
+                <p>Aunque esta página se centra principalmente en muñecos
+                    personalizados, también se ofrecen servicios como
+                    maquillaje, peluquería, posticería o caracterización. <br> <br>
+                    Con
+                    unos estudios previos aprendidos en la Escuela de Imagen y
+                    Sonido de Vigo y diferentes prácticas para tener experiencia
+                    tanto en sesiones de fotos, cortometrajes o en pasarelas de
+                    moda. Con un gran apetito por aprender y crear cosas nuevas
+                    y brindar este trabajo tan bonito a todo tipo de público.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="wrapper-2">
+            <h3 class="titulo">Productos</h3>
+
+            <div class="profile-productos" id="productos">
+                <a href="productos.html#muneco-azul">
+                    <img src="mazul.jpg"> </a>
+                <a href="productos.html#muneco-rosa">
+                    <img src="mrosa.jpg"> </a>
+                <a href="productos.html#muneco-marron">
+                    <img src="mmarron.jpg"> </a>
+
+            </div>
+
+        </div>
+
+        <div class="wrapper-3" id="contacto">
+            <h3 class="titulo">Contacto</h3>
+            <div class="contacto-container">
+                <div class ="contacto-logo">
+                    <h2>Instagram</h2>
+                    <a href="https://www.instagram.com/soyaruna/?hl=am-et">
+                        <img
+                            class="contacto"
+                            src="ig_icon.png" alt="Instagram">
+                    </a>
+                </div>
+
+                <div class ="contacto-logo">
+                    <h2>Email</h2>
+                    <a href="mailto:soyaruna@gmail.com">
+                        <img
+                            class="contacto"
+                            src="gmail-logo.png" alt="Email">
+                    </div>
+                </div>
+
+                <script>
+let slideIndex = 0;
+  const slides = document.querySelectorAll(".profile-img");
+
+  function showSlides() {
+    slides.forEach((slide) => {
+      slide.classList.remove("visible");
+    });
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].classList.add("visible");
+
+    setTimeout(showSlides, 3000);
+  }
+
+  // Inicializa mostrando la primera imagen
+  if (slides.length > 0) {
+    slides[0].classList.add("visible");
+  }
+
+  setTimeout(showSlides, 2000);
+
+</script>
+            </body>
